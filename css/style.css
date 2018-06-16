@@ -278,7 +278,8 @@ color:#58c93a;
 
 
 .btn-blog-info {
-    width: 186px;
+    width: 100%;
+    /* width: 186px; */
     border: 2px solid #c2c2c2;
     border-radius: 20px;
     background-color: #ffffff;
@@ -297,6 +298,11 @@ color:#58c93a;
     background-position: right;
     background-position-x: 95%;
     
+}
+@media (min-width:240px){
+    .btn-blog-info {
+        width: 186px;
+    }
 }
 
 /* next-prev btn */
