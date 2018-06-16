@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <title>My Blog</title>
+</head>
+
+<body onload="init()">
+
+    <div class="modal flex column align-items text-align space-around">
+        <div class="blog-info modal-info flex column justify-content-center align-items">
+            <h2>Join us to get access to the latest stories!</h2>
+            <label class="modal-flex-item">Email address</label>
+            <input type="email" class="input-email modal-flex-item" aria-describedby="emailHelp" placeholder="Enter email">
+            <button class="btn-submit modal-flex-item" onclick="onSubmit(this)">Submit</button>
+        </div>
+    </div>
+    <header>
+        <nav class="container flex align-items space-between">
+            <h1 class="logo">Blogin</h1>
+            <button class="menu-btn fas fa-bars fa" onclick="toggleMenu(this)"> </button>
+            <ul class="main-menu list-clean flex">
+                <li onmouseover="openSubMenu()" onmouseleave="closeSubMenu()" onclick="toggleSubMenu()" class="main-menu-item flex align-items">
+                    <a href="#">Journal
+                        <ul class="sub-menu list-clean flex column">
+                        </ul>
+                    </a>
+                </li>
+                <li class="main-menu-item flex align-items">
+                    <a href="#">About</a>
+                </li>
+                <li class="main-menu-item flex align-items">
+                    <a href="#">Work</a>
+                </li>
+                <li class="main-menu-item flex align-items">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="main-blogs container">
+            <ul class="blogs list-clean flex column">
+                <li class="blog-item flex space-between">
+                    <div class="li-flex-item">
+                        <img src="img/england.png" alt="Perfect england view" />
+                    </div>
+                    <div class="blog-info flex column space-between li-flex-item">
+                        <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                        <p>
+                            <span class="info-span">Ut enim ad </span>minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                        </p>
+                        <button class="btn-blog-info" onclick="readMore(this)">Continue Reading </button>
+                    </div>
+                </li>
+                <li class="blog-item flex space-between">
+                    <div class="li-flex-item">
+                        <img src="img/back2.png" alt="Perfect nature view" />
+                    </div>
+
+                    <div class="blog-info flex column space-between li-flex-item">
+                        <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                        </p>
+                        <button class="btn-blog-info" onclick="readMore(this)">Continue Reading</button>
+                    </div>
+                </li>
+                <li class="blog-item flex space-between">
+                    <div class="li-flex-item">
+                        <img src="img/back3.png" alt="Perfect warm view" />
+                    </div>
+
+                    <div class="blog-info flex column space-between li-flex-item">
+                        <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                        </p>
+                        <button class="btn-blog-info" onclick="readMore(this)">Continue Reading</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container flex space-between btns-page-container">
+            <buttun class="btn-page btn-prev">Previous</buttun>
+            <buttun class="btn-page btn-next">next</buttun>
+        </div>
+    </main>
+
+    <footer class="flex column justify-content-center text-align">
+        <div>
+            <h1 class="logo">Blogin</h1>
+            <p class="web-info">
+                <span class="footer-p-spaceing">© 2014</span> Blogin.com - All Rights Reserved - Find more free Templates at
+                <span class="footer-p-spaceing last-word">Pixelhint.com</span>
+            </p>
+            <div class="footer-btns">
+                <button class="fa fa-facebook"></button>
+                <button class="fa fa-twitter"></button>
+                <button class="fa fa-behance"></button>
+                <button class="fa fa-dribbble"></button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
