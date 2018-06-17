@@ -40,16 +40,6 @@ function toggleSubMenu() {
     var elSubMenu = document.querySelector('.sub-menu');
     elSubMenu.classList.toggle('openSubMenu');
 }
-function onWheel(ev) {
-    // var elmenu = document.querySelector('.main-menu')
-    // var isMenuOpen = elmenu.classList.contains('open');
-    // if (ev.wheelDeltaY > 0  && isMenuOpen) {
-    //     elmenu.style.top = 0;
-    // } else  {
-    //     elmenu.style.top = 60;
-    // }
-
-}
 
 function readMore(el) {
     var elModal = document.querySelector('.modal');
