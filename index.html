@@ -12,33 +12,34 @@
 
 <body onload="init()">
 
-    <div class="modal flex column align-items text-align space-around">
-        <div class="blog-info modal-info flex column justify-content-center align-items">
+    <div onclick="closeModal(event)" class="modal flex column align-items">
+        <div onclick="event.stopPropagation()" class="blog-info modal-info flex column center-el">
+            <button onclick="closeModal(event)" class="btn-close fa fa-times"> </button>
             <h2>Join us to get access to the latest stories!</h2>
             <label class="modal-flex-item">Email address</label>
-            <input type="email" class="input-email modal-flex-item" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" onclick="event.stopPropagation()" class="input-email modal-flex-item" aria-describedby="emailHelp" placeholder="Enter email">
             <button class="btn-submit modal-flex-item" onclick="onSubmit(this)">Submit</button>
         </div>
     </div>
     <header>
         <nav class="container flex align-items space-between">
             <h1 class="logo">Blogin</h1>
-            <button class="menu-btn fas fa-bars fa" onclick="toggleMenu(this)"> </button>
+            <button class="menu-btn fa fa-bars" onclick="toggleMenu(this)"></button>
             <ul class="main-menu list-clean flex">
-                <li onmouseover="openSubMenu()" onmouseleave="closeSubMenu()" onclick="toggleSubMenu()" class="main-menu-item flex align-items">
-                    <a href="#">Journal
-                        <ul class="sub-menu list-clean flex column">
-                        </ul>
+                <li class="item-drop flex column" onclick="toggleSubMenu()">
+                    <a class="flex main-menu-item center-el" href="#">Journal
                     </a>
+                    <ul class="sub-menu list-clean flex column">
+                    </ul>
                 </li>
-                <li class="main-menu-item flex align-items">
-                    <a href="#">About</a>
+                <li class="flex column">
+                    <a class="active flex main-menu-item center-el" href="#">About</a>
                 </li>
-                <li class="main-menu-item flex align-items">
-                    <a href="#">Work</a>
+                <li class="flex column">
+                    <a class="flex main-menu-item center-el" href="#">Work</a>
                 </li>
-                <li class="main-menu-item flex align-items">
-                    <a href="#">Contact</a>
+                <li class="flex column">
+                    <a class="flex main-menu-item center-el" href="#">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -101,8 +102,8 @@
             </ul>
         </div>
         <div class="container flex space-between btns-page-container">
-            <buttun class="btn-page btn-prev">Previous</buttun>
-            <buttun class="btn-page btn-next">next</buttun>
+            <button class="btn-page btn-prev">Previous</button>
+            <button class="btn-page btn-next">next</button>
         </div>
     </main>
 
