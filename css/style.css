@@ -166,7 +166,7 @@ li .main-menu-item.active {
     min-width: 30px;
     min-height: 25px;
 }
-.menu-btn:hover {
+.menu-btn:hover,.menu-btn:active {
     color:  #c2c2c2;
 }
 
@@ -271,7 +271,7 @@ li .main-menu-item.active {
     transition: all 0.3s;
 }
 
-.btn-blog-info:hover,.btn-blog-info:hover:after {
+.btn-blog-info:hover,.btn-blog-info:active,.btn-blog-info:hover:after {
     border: 2px solid #58c93a;
     color:#58c93a;
     background-size: 10%;
@@ -292,7 +292,7 @@ li .main-menu-item.active {
     text-align: center;
     min-width: 130px;
 }
-.btn-page:hover {
+.btn-page:hover,.btn-page:active {
     color: #c2c1c1;
 }
 .btn-prev::before{
@@ -396,7 +396,7 @@ z-index: -1;
 }
 
 
-.btn-close:hover{
+.btn-close:hover,.btn-close:active{
     color:#706b6d;
 }
 @media (min-width:700px){
